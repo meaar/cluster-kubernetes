@@ -17,7 +17,7 @@ sudo service ssh start
 # ssh-copy-id -i ~/.ssh/id_rsa.pub YOUR_USER_NAME@IP_ADDRESS_OF_THE_SERVER
 wget https://github.com/rancher/rke/releases/download/v1.4.1/rke_linux-amd64
 sudo chmod +x rke_linux-amd64
-sudo rke_linux-amd64 /bin/rke
+sudo mv rke_linux-amd64 /bin/rke
 rke config
 # rke up
 sudo curl -fsSLo /etc/apt/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
